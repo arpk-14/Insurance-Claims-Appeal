@@ -1,0 +1,41 @@
+{
+    "insurance_type": "health",
+    "denial_reason": "experimental_treatment",
+    "policyholder_name": "Robert Johnson",
+    "policyholder_address": "789 Oak Avenue",
+    "city_state_zip": "Metropolis, NY 10001",
+    "insurance_company_name": "National Health Insurance",
+    "insurance_company_address": "100 Corporate Plaza, New York, NY 10002",
+    "policy_number": "NHI456789012",
+    "claim_number": "CLM123456789",
+    "date_of_service": "February 10, 2025",
+    "denial_date": "March 5, 2025",
+    "provider_name": "Dr. Sarah Williams",
+    "physician_name": "Dr. Sarah Williams",
+    "treatment": "Targeted immunotherapy for advanced melanoma",
+    "diagnosis": "Stage III melanoma",
+    "supporting_documents": [
+        {"name": "Denial Letter", "available": true},
+        {"name": "Medical Records", "available": true},
+        {"name": "Physician Letter", "available": true},
+        {"name": "Clinical Studies Supporting Treatment", "available": true},
+        {"name": "FDA Approval Documentation", "available": true}
+    ],
+    "previous_treatments": [
+        {"name": "Surgery", "dates": "October 2024", "outcome": "incomplete removal of cancer cells"},
+        {"name": "Standard Chemotherapy", "dates": "November-December 2024", "outcome": "significant side effects with minimal tumor reduction"}
+    ],
+    "conditional_sections": [
+        {"name": "Previous Treatments", "include": true},
+        {"name": "FDA Approval", "include": true},
+        {"name": "Clinical Evidence", "include": true},
+        {"name": "Other Insurance Coverage", "include": true}
+    ],
+    "tone_preferences": {
+        "formality": "formal",
+        "assertiveness": "strong"
+    },
+    "urgency_level": 4,
+    "email": "robert.johnson@example.com",
+    "phone": "555-987-6543"
+}

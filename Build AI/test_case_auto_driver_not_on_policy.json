@@ -1,0 +1,36 @@
+{
+    "insurance_type": "auto",
+    "denial_reason": "driver_not_on_policy",
+    "policyholder_name": "Michael Chen",
+    "policyholder_address": "456 Elm Street",
+    "city_state_zip": "Springfield, IL 62701",
+    "insurance_company_name": "Reliable Auto Insurance",
+    "insurance_company_address": "789 Insurance Boulevard, Springfield, IL 62702",
+    "policy_number": "AUTO78901234",
+    "claim_number": "CLM567890123",
+    "date_of_incident": "April 2, 2025",
+    "denial_date": "April 10, 2025",
+    "vehicle_info": "2023 Toyota Camry, VIN: 1HGCM82633A123456",
+    "accident_description": "Minor collision at intersection of Main St. and 5th Ave. Vehicle sustained damage to front bumper and passenger side door.",
+    "driver_name": "Lisa Chen",
+    "driver_relationship": "Spouse",
+    "supporting_documents": [
+        {"name": "Denial Letter", "available": true},
+        {"name": "Insurance Policy", "available": true},
+        {"name": "Police Report", "available": true},
+        {"name": "Photos of Damage", "available": true},
+        {"name": "Marriage Certificate", "available": true}
+    ],
+    "conditional_sections": [
+        {"name": "Driver Not on Policy", "include": true},
+        {"name": "Permissive Use", "include": false},
+        {"name": "Household Member", "include": true}
+    ],
+    "tone_preferences": {
+        "formality": "formal",
+        "assertiveness": "moderate"
+    },
+    "urgency_level": 3,
+    "email": "michael.chen@example.com",
+    "phone": "555-234-5678"
+}

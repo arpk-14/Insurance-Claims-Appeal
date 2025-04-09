@@ -1,0 +1,37 @@
+{
+    "insurance_type": "home",
+    "denial_reason": "excluded_peril",
+    "policyholder_name": "Amanda Rodriguez",
+    "policyholder_address": "123 Maple Drive",
+    "city_state_zip": "Lakeside, FL 33403",
+    "insurance_company_name": "Homestead Insurance Company",
+    "insurance_company_address": "555 Coverage Lane, Tampa, FL 33607",
+    "policy_number": "HOME12345678",
+    "claim_number": "CLM987654321",
+    "date_of_incident": "March 22, 2025",
+    "denial_date": "April 5, 2025",
+    "property_address": "123 Maple Drive, Lakeside, FL 33403",
+    "damage_description": "Water damage to living room ceiling, walls, and flooring",
+    "damage_cause": "Heavy rainstorm causing roof leak",
+    "denial_reason_stated": "Water damage excluded as flood-related damage",
+    "supporting_documents": [
+        {"name": "Denial Letter", "available": true},
+        {"name": "Insurance Policy", "available": true},
+        {"name": "Photos of Damage", "available": true},
+        {"name": "Weather Report", "available": true},
+        {"name": "Contractor Assessment", "available": true},
+        {"name": "Roof Inspection Report", "available": true}
+    ],
+    "conditional_sections": [
+        {"name": "Excluded Peril", "include": true},
+        {"name": "Maintenance/Wear and Tear", "include": false},
+        {"name": "Policy Exclusion", "include": true}
+    ],
+    "tone_preferences": {
+        "formality": "formal",
+        "assertiveness": "moderate"
+    },
+    "urgency_level": 3,
+    "email": "amanda.rodriguez@example.com",
+    "phone": "555-876-5432"
+}

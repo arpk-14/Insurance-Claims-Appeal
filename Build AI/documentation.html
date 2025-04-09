@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Insurance Claims Denial Appeal Writer - Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .doc-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid #e9ecef;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+        }
+        .nav-pills .nav-link {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>AI Insurance Claims Denial Appeal Writer</h1>
+                    <p class="lead">Documentation Portal</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="sticky-top pt-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                        <button class="nav-link" id="v-pills-user-tab" data-bs-toggle="pill" data-bs-target="#v-pills-user" type="button" role="tab" aria-controls="v-pills-user" aria-selected="false">User Guide</button>
+                        <button class="nav-link" id="v-pills-developer-tab" data-bs-toggle="pill" data-bs-target="#v-pills-developer" type="button" role="tab" aria-controls="v-pills-developer" aria-selected="false">Developer Docs</button>
+                        <button class="nav-link" id="v-pills-api-tab" data-bs-toggle="pill" data-bs-target="#v-pills-api" type="button" role="tab" aria-controls="v-pills-api" aria-selected="false">API Reference</button>
+                        <button class="nav-link" id="v-pills-faq-tab" data-bs-toggle="pill" data-bs-target="#v-pills-faq" type="button" role="tab" aria-controls="v-pills-faq" aria-selected="false">FAQ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- Home Tab -->
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="doc-section">
+                            <h2>Welcome to the Documentation Portal</h2>
+                            <p>This portal provides comprehensive documentation for the AI Insurance Claims Denial Appeal Writer web application. Whether you're a user looking for guidance on creating appeal letters or a developer interested in the technical details, you'll find the information you need here.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="bi bi-person me-2"></i>For Users</h5>
+                                            <p class="card-text">Learn how to use the application to create effective appeal letters for denied insurance claims.</p>
+                                            <button class="btn btn-primary" id="user-guide-btn">User Guide</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="bi bi-code-slash me-2"></i>For Developers</h5>
+                                            <p class="card-text">Explore the technical architecture, API documentation, and how to extend the application.</p>
+                                            <button class="btn btn-primary" id="developer-docs-btn">Developer Docs</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h3 class="mt-4">Quick Links</h3>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action" id="getting-started-link">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Getting Started</h5>
+                                        <small><i class="bi bi-arrow-right"></i></small>
+                                    </div>
+                                    <p class="mb-1">Quick introduction to using the application</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action" id="api-reference-link">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">API Reference</h5>
+                                        <small><i class="bi bi-arrow-right"></i></small>
+                                    </div>
+                                    <p class="mb-1">Technical details of the backend API</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action" id="faq-link">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Frequently Asked Questions</h5>
+                                        <small><i class="bi bi-arrow-right"></i></small>
+                                    </div>
+                                    <p class="mb-1">Common questions and answers</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- User Guide Tab -->
+                    <div class="tab-pane fade" id="v-pills-user" role="tabpanel" aria-labelledby="v-pills-user-tab">
+                        <div class="doc-section">
+                            <h2>User Guide</h2>
+                            <p>The AI Insurance Claims Denial Appeal Writer is a web-based tool designed to help you create effective appeal letters when your insurance claims are denied. This guide will walk you through all aspects of using the application.</p>
+                            
+                            <div class="alert alert-info">
+                                <h5><i class="bi bi-info-circle me-2"></i>Getting Started</h5>
+                                <p>To use the AI Insurance Claims Denial Appeal Writer, you'll need:</p>
+                                <ul>
+                                    <li>A web browser (Chrome, Firefox, Safari, or Edge recommended)</li>
+                                    <li>Your insurance denial letter</li>
+                                    <li>Your insurance policy information</li>
+                                    <li>Any supporting documentation relevant to your claim</li>
+                                </ul>
+                            </div>
+                            
+                            <h3 class="mt-4">Table of Contents</h3>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item"><a href="#creating-account">Creating an Account</a></li>
+                                <li class="list-group-item"><a href="#logging-in">Logging In</a></li>
+                                <li class="list-group-item"><a href="#dashboard-overview">Dashboard Overview</a></li>
+                                <li class="list-group-item"><a href="#creating-appeal">Creating a New Appeal</a></li>
+                                <li class="list-group-item"><a href="#managing-appeals">Managing Saved Appeals</a></li>
+                                <li class="list-group-item"><a href="#downloading-letters">Downloading and Using Appeal Letters</a></li>
+                                <li class="list-group-item"><a href="#tips">Tips for Successful Appeals</a></li>
+                            </ul>
+                            
+                            <h3 id="creating-account">Creating an Account</h3>
+                            <p>Creating an account allows you to save your appeals and access them later.</p>
+                            <ol>
+                                <li>From the homepage, click the "Register" button or navigate to the Register page</li>
+                                <li>Fill in your full name, email address, and create a password</li>
+                                <li>Review and accept the Terms of Service and Privacy Policy</li>
+                                <li>Click "Create Account"</li>
+                                <li>You'll be automatically logged in and redirected to your dashboard</li>
+                            </ol>
+                            
+                            <!-- Additional sections would be included here -->
+                            
+                            <div class="alert alert-warning mt-4">
+                                <h5><i class="bi bi-exclamation-triangle me-2"></i>Important Note</h5>
+                                <p>For a complete version of the user guide with all sections, please download the full documentation.</p>
+                                <a href="/docs/user_guide.md" class="btn btn-warning">Download Full User Guide</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Developer Docs Tab -->
+                    <div class="tab-pane fade" id="v-pills-developer" role="tabpanel" aria-labelledby="v-pills-developer-tab">
+                        <div class="doc-section">
+                            <h2>Developer Documentation</h2>
+                            <p>This documentation provides technical details about the AI Insurance Claims Denial Appeal Writer web application. It's intended for developers who want to understand, maintain, or extend the system.</p>
+                            
+                            <h3 class="mt-4">System Architecture</h3>
+                            <p>The application follows a client-server architecture:</p>
+                            <ul>
+                                <li><strong>Frontend</strong>: Single-page application built with HTML, CSS, and JavaScript</li>
+                                <li><strong>Backend</strong>: Node.js Express server providing RESTful API endpoints</li>
+                                <li><strong>Authentication</strong>: JWT-based authentication system</li>
+                                <li><strong>Storage</strong>: File-based storage for templates and generated letters</li>
+                            </ul>
+                            
+                            <div class="card mt-4 mb-4">
+                                <div class="card-header">
+                                    Architecture Diagram
+                                </div>
+                                <div class="card-body">
+                                    <pre class="bg-light p-3">
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│                 │     │                 │     │                 │
+│  Web Browser    │────▶│  Frontend       │────▶│  Backend API    │
+│  (User)         │     │  (Netlify)      │     │  (Heroku)       │
+│                 │◀────│                 │◀────│                 │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+                                                        │
+                                                        ▼
+                                               ┌─────────────────┐
+                                               │                 │
+                                               │  Templates      │
+                                               │  Storage        │
+                                               │                 │
+                                               └─────────────────┘
+                                    </pre>
+                                </div>
+                            </div>
+                            
+                            <h3>Technology Stack</h3>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Frontend</h5>
+                                    <ul>
+                                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                                        <li>Bootstrap 5 for responsive design</li>
+                                        <li>Fetch API for AJAX requests</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Backend</h5>
+                                    <ul>
+                                        <li>Node.js</li>
+                                        <li>Express.js framework</li>
+                                        <li>JWT for authentication</li>
+                                        <li>Marked for Markdown to HTML</li>
+                                        <li>Puppeteer for HTML to PDF</li>
+                                        <li>Docx for Word document generation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Deployment</h5>
+                                    <ul>
+                                        <li>Netlify for frontend hosting</li>
+                                        <li>Heroku for backend API hosting</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional sections would be included here -->
+                            
+                            <div class="alert alert-warning mt-4">
+                                <h5><i class="bi bi-exclamation-triangle me-2"></i>Important Note</h5>
+                                <p>For a complete version of the developer documentation with all sections, please download the full documentation.</p>
+                                <a href="/docs/developer_docs.md" class="btn btn-warning">Download Full Developer Docs</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- API Reference Tab -->
+                    <div class="tab-pane fade" id="v-pills-api" role="tabpanel" aria-labelledby="v-pills-api-tab">
+                        <div class="doc-section">
+                            <h2>API Reference</h2>
+                            <p>The backend provides the following RESTful API endpoints for interacting with the AI Insurance Claims Denial Appeal Writer.</p>
+                            
+                            <h3 class="mt-4">Authentication Endpoints</h3>
+                            
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    POST /api/auth/register
+                                </div>
+                                <div class="card-body">
+                                    <h5>Register a new user</h5>
+                                    <h6>Request Body:</h6>
+                                    <pre class="bg-light p-3">
+{
+  "name": "User Name",
+  "email": "user@example.com",
+  "password": "password123"
+}
+                                    </pre>
+                                    <h6>Response:</h6>
+                                    <pre class="bg-light p-3">
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+                                    </pre>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    POST /api/auth/login
+                                </div>
+                                <div class="card-body">
+                                    <h5>Authenticate user and get token</h5>
+                                    <h6>Request Body:</h6>
+                                    <pre class="bg-light p-3">
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+                                    </pre>
+                                    <h6>Response:</h6>
+                                    <pre class="bg-light p-3">
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+                                    </pre>
+                                </div>
+                            </div>
+                            
+                            <h3 class="mt-4">Appeal Generation Endpoints</h3>
+                            
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    POST /api/generate-appeal
+                                </div>
+                                <div class="card-body">
+                                    <h5>Generate appeal letter from form data</h5>
+                                    <p>Requires authentication token in header: <code>x-auth-token</code></p>
+                                    <h6>Request Body:</h6>
+                                    <pre class="bg-light p-3">
+{
+  "insuranceType": "health",
+  "denialReason": "medical_necessity",
+  "policyholderName": "John Doe",
+  "policyholderAddress": "123 Main St",
+  "city": "Anytown",
+  "state": "CA",
+  "zipCode": "12345",
+  "insuranceCompanyName": "Health Insurance Co",
+  "policyNumber": "POL123456",
+  "claimNumber": "CLM789012",
+  "denialDate": "2025-03-15",
+  "dateOfService": "2025-02-28",
+  "providerName": "Dr. Jane Smith",
+  "treatment": "Physical Therapy",
+  "diagnosis": "Lower Back Pain",
+  "supportingDocs": ["Medical Records", "Letter from Doctor"]
+}
+                                    </pre>
+                                    <h6>Response:</h6>
+                                    <pre class="bg-light p-3">
+{
+  "success": true,
+  "files": {
+    "markdown": "/output/appeal_1712345678.md",
+    "html": "/output/appeal_1712345678.html",
+    "pdf": "/output/appeal_1712345678.pdf",
+    "docx": "/output/appeal_1712345678.docx"
+  },
+  "preview": "<!DOCTYPE html><html><body>...</body></html>"
+}
+                                    </pre>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional endpoints would be included here -->
+                            
+                            <div class="alert alert-info mt-4">
+                                <h5><i class="bi bi-info-circle me-2"></i>Authentication</h5>
+                                <p>All protected endpoints require a valid JWT token in the <code>x-auth-token</code> header.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Tab -->
+                    <div class="tab-pane fade" id="v-pills-faq" role="tabpanel" aria-labelledby="v-pills-faq-tab">
+                        <div class="doc-section">
+                            <h2>Frequently Asked Questions</h2>
+                            
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            How long does it take to create an appeal letter?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Most users complete the process in 10-15 minutes, assuming you have all your information ready. This includes entering your personal information, insurance details, and specific information about the denied claim.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Is my information secure?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Yes, we use industry-standard encryption and security practices. All data is encrypted in transit and at rest. We never share your personal information with third parties, and you can request deletion of your account and data at any time.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Can I edit the generated letter?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Yes, you can download the Word (.docx) version to make any necessary edits. This allows you to customize the letter further or add specific details that weren't captured in the form.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            How many appeals can I create?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            There is no limit to the number of appeals you can create with your account. You can create appeals for different insurance claims or generate multiple versions of an appeal letter.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Will this guarantee my appeal is approved?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            While our templates are designed based on successful appeals, we cannot guarantee approval as each case is unique and ultimately decided by your insurance company. However, using our tool will help you create a professional, well-structured appeal letter that addresses the specific reasons for denial.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>AI Insurance Claims Denial Appeal Writer</h5>
+                    <p>A tool to help you create effective appeal letters for denied insurance claims.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">User Guide</a></li>
+                        <li><a href="#">Developer Docs</a></li>
+                        <li><a href="#">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:support@example.com">support@example.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2025 AI Insurance Claims Denial Appeal Writer. All rights reserved.</p>
+                    <p><small>Disclaimer: This tool provides general information and generates appeal letters based on the information you provide. It is not a substitute for professional legal or medical advice.</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quick link buttons
+            document.getElementById('user-guide-btn').addEventListener('click', function() {
+                document.getElementById('v-pills-user-tab').click();
+            });
+            
+            document.getElementById('developer-docs-btn').addEventListener('click', function() {
+                document.getElementById('v-pills-developer-tab').click();
+            });
+            
+            document.getElementById('getting-started-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('v-pills-user-tab').click();
+            });
+            
+            document.getElementById('api-reference-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('v-pills-api-tab').click();
+            });
+            
+            document.getElementById('faq-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('v-pills-faq-tab').click();
+            });
+        });
+    </script>
+</body>
+</html>

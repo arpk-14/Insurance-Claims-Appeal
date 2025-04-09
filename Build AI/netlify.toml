@@ -1,0 +1,32 @@
+# Deployment Configuration for AI Insurance Claims Denial Appeal Writer
+
+# This file contains configuration for deploying the web application
+# to a production environment using Netlify for the frontend and
+# Heroku for the backend API.
+
+# Frontend deployment configuration (Netlify)
+[build]
+  base = "public"
+  publish = "public"
+  command = "echo 'No build command needed for static files'"
+
+# Redirects and headers
+[[redirects]]
+  from = "/api/*"
+  to = "https://ai-insurance-appeal-writer.herokuapp.com/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://ai-insurance-appeal-writer.herokuapp.com;"

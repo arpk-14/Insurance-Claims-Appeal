@@ -1,0 +1,39 @@
+{
+    "insurance_type": "health",
+    "denial_reason": "medical_necessity",
+    "policyholder_name": "Jane Doe",
+    "policyholder_address": "123 Main Street",
+    "city_state_zip": "Anytown, CA 12345",
+    "insurance_company_name": "ABC Health Insurance",
+    "insurance_company_address": "456 Insurance Way, Insuranceville, CA 67890",
+    "policy_number": "POL123456789",
+    "claim_number": "CLM987654321",
+    "date_of_service": "March 15, 2025",
+    "denial_date": "March 30, 2025",
+    "provider_name": "Dr. John Smith",
+    "physician_name": "Dr. John Smith",
+    "treatment": "MRI of the lumbar spine",
+    "diagnosis": "chronic lower back pain",
+    "supporting_documents": [
+        {"name": "Denial Letter", "available": true},
+        {"name": "Medical Records", "available": true},
+        {"name": "Physician Letter of Medical Necessity", "available": true},
+        {"name": "Previous Treatment Records", "available": true}
+    ],
+    "previous_treatments": [
+        {"name": "Physical Therapy", "dates": "January-February 2025", "outcome": "minimal improvement"},
+        {"name": "Pain Medication", "dates": "December 2024-March 2025", "outcome": "temporary relief only"},
+        {"name": "Chiropractic Care", "dates": "November 2024-January 2025", "outcome": "no significant improvement"}
+    ],
+    "conditional_sections": [
+        {"name": "Previous Treatments", "include": true},
+        {"name": "Clinical Evidence", "include": true}
+    ],
+    "tone_preferences": {
+        "formality": "formal",
+        "assertiveness": "moderate"
+    },
+    "urgency_level": 3,
+    "email": "jane.doe@example.com",
+    "phone": "555-123-4567"
+}
